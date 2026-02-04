@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart event dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="new-eventer">
+        <h1>🎯Smart Event Dashboard</h1>
+        <div id="form-container">
+            <form action="">
+                <h2>Add New Event</h2>
+                <label for="event-title">Event Title:</label>
+                <input type="text" id="event-title">
+
+                <label for="event-date">Event Date:</label>
+                <input type="date" id="event-date">
+
+                <label for="event-category">Category:</label>
+                <select id="event-category">
+                    <option value="conference">Conference</option>
+                    <option value="webinar">Webinar</option>
+                    <option value="social">Social</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="meetup">Meetup</option>
+                </select>
+
+                <label for="event-description">Description:</label>
+                <textarea id="event-description" cols="30" rows="10"></textarea>
+
+                <button type="submit" id="add-event-btn">Add Event</button>
+            </form>
+
+            <div id="schedule-container">
+                <h2>My Events</h2>
+                <div id="btns-container">
+                    <button id="clear-btn">Clear All Events</button>
+                    <button id="add-sample-btn">Add Sample Events</button>
+                </div>
+                <div id="event-handling-container">No events yet. Add your first event!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo">
+        <h3>DOM Manipulation Demo</h3>
+        <div class="demo-card">
+            <div id="key-box">
+                You Pressed: Shift
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
